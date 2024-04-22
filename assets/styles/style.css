@@ -1,0 +1,434 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+main{
+  overflow: auto;
+  padding: 50px;
+}
+h1,h2 {
+  color: #111827;
+}
+h3 {
+  color: #6B7280;
+  font-size: 20px;
+  font-weight: 400;
+}
+.atassss h1 {
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+}
+.atassss p {
+  font-size: 15px;
+  text-decoration: none;
+
+  color: white;
+}
+p {
+  font-size: 18px;
+  color: #111827;
+  font-weight: 400;
+  text-decoration: none;
+}
+.atassss {
+  display: flex;
+  justify-content: center; /* Mengatur elemen ke tengah secara horizontal */
+  align-items: center; /* Mengatur elemen ke tengah secara vertikal */
+  height: 80vh; /* Untuk mengatur tinggi elemen agar menempati seluruh tinggi viewport */
+}
+
+.cards {
+  margin-right: 20px;
+}
+
+.card {
+  max-width: 24rem; /* 384px */
+  border-radius: 0.5rem; /* 8px */
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  transition-property: transform;
+  transition-duration: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding-left: 50px; /* 40px */
+  padding-right: 50px; /* 40px */
+  padding-top: 10px; /* 12px */
+  padding-bottom: 10px; /* 12px */
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+  margin-bottom: 0.5rem; /* 8px */
+}
+
+.description {
+  color: #4a5568;
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+
+.hero {
+  text-align: center; /* Mengatur teks di dalam .hero agar berada di tengah */
+}
+.kotakkotak {
+  justify-content: center; /* Mengatur elemen ke tengah secara horizontal */
+  display: flex;
+}
+
+
+.gambars {
+  border-radius: 10px;
+  
+}
+.hero {
+  float: left;
+  width: 50%;
+  padding: 60px;
+}
+.bigcards h1{
+  text-align: center;
+  justify-content:center ;
+}
+.bigcards {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Menengahkan secara horizontal */
+}
+.kumpulancard {
+  padding-top: 30px;
+  justify-content: center;
+  display: flex; /* Menjadikan kontainer card flex */
+  flex-wrap: wrap; /* Mengatur wrap agar card-card dapat membungkus ke baris baru jika tidak cukup ruang */
+  gap: 20px; /* Mengatur jarak antara card-card */
+}
+
+.cardss {
+  flex: 1; /* Mengatur agar card-card mendapatkan proporsi yang sama */
+  max-width: 400px; /* Mengatur lebar maksimum card */
+  padding: 20px; /* Memberikan padding untuk card */
+  border-radius: 10px; /* Mengatur border radius untuk card */
+}
+
+.cardss img {
+  width: 100%; /* Mengatur gambar agar mengisi lebar card */
+  height: 200px; /* Memastikan proporsi aspek gambar tetap terjaga */
+}
+.kartu {
+  flex: 1; /* Mengatur agar card-card mendapatkan proporsi yang sama */
+  max-width: 600px; /* Mengatur lebar maksimum card */
+  padding: 20px; /* Memberikan padding untuk card */
+  border-radius: 10px; /* Mengatur border radius untuk card */
+}
+
+.kartu img {
+width: 100%; /* Mengatur gambar agar mengisi lebar card */
+  height: 350px; /* Memastikan proporsi aspek gambar tetap terjaga */
+}
+
+
+.cardss h3 {
+  margin-top: 10px; /* Memberikan margin atas untuk judul */
+}
+
+.cardss p {
+  margin-top: 10px; /* Memberikan margin atas untuk paragraf */
+}
+
+.cardss button {
+  margin-top: 10px; /* Memberikan margin atas untuk tombol */
+}
+
+.cardlagi {
+  display: flex;
+}
+
+
+#content {
+  padding-inline: 50px;
+}
+
+ 
+.button {
+  transition-duration: 0.4s;
+  background-color: #ffff; /* Green */
+  padding: 10px;
+  color: rgb(29, 27, 27);
+  border: none;
+  border-radius: 7px;
+  padding-left: 20px; /* margin kiri */
+  padding-right: 20px; /* margin kanan */
+}
+
+.button:hover {
+  color: #1A56DB;
+ 
+}
+.button-dark {
+  transition-duration: 0.4s;
+  background-color: #222222; /* Green */
+  padding: 10px;
+  color: rgb(201, 199, 199);
+  border: none;
+  border-radius: 7px;
+  padding-left: 20px; /* margin kiri */
+  padding-right: 20px; /* margin kanan */
+}
+
+.button-dark:hover {
+  color: #1A56DB;
+ 
+}
+
+nav a, nav p{
+  font-size: 15px;
+
+  font-weight: 400;
+  text-decoration: none;
+
+  color: white;
+}
+
+nav a:hover {
+  color: #1A56DB;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.featured-image {
+  float: right;
+  width: 40%;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.jelajahi {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Menempatkan elemen di ujung kiri dan kanan */
+  align-items: center; /* Memusatkan elemen secara vertikal */
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+}
+
+nav p {
+  margin-left: 30px;
+}
+nav form {
+  margin-right: 30px;
+}
+
+nav ul {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.225);
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: center; /* Memusatkan elemen horizontal */
+  list-style-type: none;
+}
+
+nav ul li:not(:last-child) {
+  margin-right: 40px; /* Memberikan margin-right pada semua elemen li kecuali yang terakhir */
+}
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+input[type=mail], select {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+header {
+  display: inline;
+}
+.backg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -50;
+  border-radius: 0 0 1rem 1rem; /* Rounded bottom-left dan bottom-right */
+}
+
+.box {
+  height: 100px;
+}
+
+.flex {
+  display: flex;
+}
+
+.box {
+  flex: 1; /* Membagi ruang secara merata di antara kedua kotak */
+  padding-top: 20px; /* Padding untuk ruang di dalam kotak */
+}
+
+.box1 {
+
+  display: inline-block; /* Membuat elemen box1 menjadi flex container */
+  justify-content: center; /* Menengahkan secara horizontal */
+  align-items: center; /* Menengahkan secara vertikal */
+}
+.picts{
+  display: flex;
+  padding-top: 100px;
+}
+.picts2{
+  display: flex;
+}
+
+.pict {
+  padding: 10px; /* Atur padding jika diperlukan */
+  display: flex; /* Menjadikan kontainer flex */
+  align-items: center; /* Memusatkan vertikal */
+  justify-content: center; /* Memusatkan horizontal */
+}
+
+.pict1 {
+  flex-grow: 4; /* Memberikan proporsi 4 untuk pict1 */
+}
+
+.pict2 {
+  flex-grow: 2; /* Memberikan proporsi 2 untuk pict2 */
+}
+
+.pict img {
+  width: 100%; /* Mengisi lebar secara penuh */
+  height: 300px; /* Tetapkan tinggi gambar */
+  object-fit: cover; /* Memastikan gambar mengisi kotak dengan mempertahankan proporsi aspek */
+  border-radius: 10px;
+}
+
+
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #ffffff;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #1F2937;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #1F2937;
+	text-decoration: none;
+	font-weight: 300;
+	color: #1F2937;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #1F2937;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgb(255, 255, 255);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #1F2937;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #1F2937;
+}
+@media screen and (max-width: 1000px) {
+  #content, aside {
+    width: 100%;
+    padding: 0;
+  }
+}
